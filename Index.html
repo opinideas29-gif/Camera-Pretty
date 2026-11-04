@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Launcher</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #1a1a1a; /* Dark mode background */
+            color: white;
+            font-family: sans-serif;
+            margin: 0;
+        }
+        .camera-btn {
+            padding: 16px 32px;
+            font-size: 18px;
+            background: #5865F2; /* Discord blurple */
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-align: center;
+        }
+        input[type="file"] {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <label class="camera-btn">
+        Launch Camera
+        <!-- The capture attribute forces the native camera app to open -->
+        <input type="file" accept="image/*" capture="environment">
+    </label>
+</body>
+</html>
